@@ -21,10 +21,8 @@
 The hardware and software requirements are the same as those of the [3D Gaussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting), which this code is built upon. To setup the environment, please run the following command:
 
 ```shell
-# Install 3DGS enviroment
-git clone https://github.com/Surrey-UPLab/Localized-Gaussian-Point-Management.git
-cd Localized-Gaussian-Point-Management
-conda env create --file environment.yml
+# Create from 3DGS enviroment
+conda create -n lpm --clone gaussian_splatting
 conda activate lpm
 # Install LightGlue enviroment
 git clone https://github.com/cvg/LightGlue.git && cd LightGlue
